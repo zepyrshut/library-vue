@@ -1,42 +1,32 @@
 <template>
   <div :class="appTheme">
-
-
-    <Navbar />
-
-    <transition name="fade" mode="out-in">
-      <router-view :theme="appTheme" />
-    </transition>
-
-
-
-
-
+    <router-view :theme="appTheme" />
   </div>
 </template>
 
   <script>
-import Navbar from "./components/Navbar.vue";
-
-
 export default {
   name: 'App',
-  components: {
-    Navbar
-  },
   data: () => {
     return {
       appTheme: localStorage.getItem('theme'),
     };
   },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
 };
 </script>
 
-  <style lang="scss">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
+
+.amatic-sc {
+  font-family: 'Amatic SC', cursive;
+}
+
+.bebas-neue {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
 </style>
