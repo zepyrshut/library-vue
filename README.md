@@ -21,4 +21,7 @@ npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference](https://cli.vuejs.org/config/)
+
+Modo claro/oscuro gracias a StomanStudio.
+[Repositorio GitHub](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
